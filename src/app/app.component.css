@@ -1,0 +1,42 @@
+.mynetwork {
+    width: 100%;
+      height: 100vh;
+      border: 1px solid lightgray;
+      background-color:#fcb300;
+}
+.graph2d {
+    /*  margin-left:470px;
+    margin-top:-562px; */
+    width:700px;
+    height:500px;
+    border-radius:4px;
+}
+
+#mybutton
+{   
+    position: fixed;
+    bottom:1%;
+    right: 60%;
+    width: 20%;
+}
+#mybutton1
+{   
+    position: fixed;
+    bottom:1%;
+    right: 20%;
+    width: 20%;
+}
+
+.card {
+    position: fixed;
+    right:1%;
+    top:15%;
+    width:300px;
+} 
+
+#submit,#completeGraph,#visualize{
+    width:100%;
+}
+
+
+
