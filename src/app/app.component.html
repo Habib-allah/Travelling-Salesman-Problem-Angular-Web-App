@@ -20,6 +20,11 @@
     <button id="visualize" type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
         Visualize
       </button>
+      <hr style="height:1px;border:none;color:rgb(82, 73, 73);background-color:rgb(82, 73, 73);" />
+
+      <button id="help" type="button" class="btn btn-dark" data-toggle="modal" data-target="#helpy">
+        How to use ?
+      </button>
 
     <hr *ngIf="mincost+greedyMinCost!=0" style="height:1px;border:none;color:rgb(82, 73, 73);background-color:rgb(82, 73, 73);" />
     <label *ngIf="mincost!=0"> Best: {{mincost}} |</label> 
@@ -49,3 +54,29 @@
       </div>
     </div>
   </div>
+
+  <!-- Help -->
+  <div class="modal fade bd-example-modal-lg" id="helpy" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabely" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabely">Help</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="modal-body" > <p>
+            • Add as many nodes as you want using the "EDIT" button on the left top corner. <br>
+            • Generate a complete graph using the "Complete graph" button.<br>
+            • Check the "Random" checkbox if you want to initialize it whith random numbers.<br>
+            • Click on any edge to change its value using the form on the right then click submit.<br>
+            • check the "Physics" to enable/disable graph physics if it annoys you.<br>
+
+          </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>

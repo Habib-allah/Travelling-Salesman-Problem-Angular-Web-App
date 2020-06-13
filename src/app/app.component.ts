@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
     hasPhysics:boolean=false;
     
     ngOnInit(){
-      
+       
     }
 
     updateColor(path:IdType[]){
@@ -271,6 +271,10 @@ export class AppComponent implements OnInit {
       }
     }
 
+    showHelp(){
+      alert("koko")
+    }
+
     TogglePhysics(){
       console.log(this.hasPhysics)
       this.hasPhysics=!this.hasPhysics;
@@ -383,7 +387,9 @@ export class AppComponent implements OnInit {
         timeAxis: {scale: 'millisecond', step: 1}
     };
           var graph2d = new vis.Graph2d(graphcontainer, this.timeData, options);     
-    }  
+          
+        }  
+    
 }
 
 interface execObj {
